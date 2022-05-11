@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E81EB862-E5FC-4702-9315-29001EB29EFC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Client_Demo</RootNamespace>
+    <AssemblyName>Client_Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\Googledowload\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD_POSTs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_POSTs.Designer.cs">
+      <DependentUpon>ADD_POSTs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_CreateGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_CreateGroup.Designer.cs">
+      <DependentUpon>Control_CreateGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Del_MemberGR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del_MemberGR.Designer.cs">
+      <DependentUpon>Del_MemberGR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Detail_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detail_User.Designer.cs">
+      <DependentUpon>Detail_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intavition_member_groups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intavition_member_groups.Designer.cs">
+      <DependentUpon>Intavition_member_groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemchatLeft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemchatLeft.Designer.cs">
+      <DependentUpon>ItemchatLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemchat_Img_LEFT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="itemchat_Img_LEFT.Designer.cs">
+      <DependentUpon>itemchat_Img_LEFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemChat_img_RIGHT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="itemChat_img_RIGHT.Designer.cs">
+      <DependentUpon>itemChat_img_RIGHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item_Friends.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item_Friends.Designer.cs">
+      <DependentUpon>Item_Friends.cs</DependentUpon>
+    </Compile>
+    <Compile Include="item_IconLeft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="item_IconLeft.Designer.cs">
+      <DependentUpon>item_IconLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item_IconRight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item_IconRight.Designer.cs">
+      <DependentUpon>Item_IconRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item_POST.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item_POST.Designer.cs">
+      <DependentUpon>Item_POST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item_userchat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item_userchat.Designer.cs">
+      <DependentUpon>Item_userchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item_User_social.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item_User_social.Designer.cs">
+      <DependentUpon>Item_User_social.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Client.Designer.cs">
+      <DependentUpon>Login_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Groups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Groups.Designer.cs">
+      <DependentUpon>Manage_Groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetInfor_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetInfor_User.Designer.cs">
+      <DependentUpon>SetInfor_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_control\Controlchat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_control\Controlchat.Designer.cs">
+      <DependentUpon>Controlchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_control\ControlFriends.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_control\ControlFriends.Designer.cs">
+      <DependentUpon>ControlFriends.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_control\ControlHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_control\ControlHome.Designer.cs">
+      <DependentUpon>ControlHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_control\Control_Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_control\Control_Profile.Designer.cs">
+      <DependentUpon>Control_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SignUp.Designer.cs">
+      <DependentUpon>UC_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemchatRight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemchatRight.Designer.cs">
+      <DependentUpon>ItemchatRight.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD_POSTs.resx">
+      <DependentUpon>ADD_POSTs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_CreateGroup.resx">
+      <DependentUpon>Control_CreateGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Del_MemberGR.resx">
+      <DependentUpon>Del_MemberGR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detail_User.resx">
+      <DependentUpon>Detail_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intavition_member_groups.resx">
+      <DependentUpon>Intavition_member_groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemchatLeft.resx">
+      <DependentUpon>ItemchatLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemchat_Img_LEFT.resx">
+      <DependentUpon>itemchat_Img_LEFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemChat_img_RIGHT.resx">
+      <DependentUpon>itemChat_img_RIGHT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item_Friends.resx">
+      <DependentUpon>Item_Friends.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item_IconLeft.resx">
+      <DependentUpon>item_IconLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item_IconRight.resx">
+      <DependentUpon>Item_IconRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item_POST.resx">
+      <DependentUpon>Item_POST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item_userchat.resx">
+      <DependentUpon>Item_userchat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item_User_social.resx">
+      <DependentUpon>Item_User_social.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Client.resx">
+      <DependentUpon>Login_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Groups.resx">
+      <DependentUpon>Manage_Groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SetInfor_User.resx">
+      <DependentUpon>SetInfor_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_control\Controlchat.resx">
+      <DependentUpon>Controlchat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_control\ControlFriends.resx">
+      <DependentUpon>ControlFriends.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_control\ControlHome.resx">
+      <DependentUpon>ControlHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_control\Control_Profile.resx">
+      <DependentUpon>Control_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SignUp.resx">
+      <DependentUpon>UC_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemchatRight.resx">
+      <DependentUpon>ItemchatRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resouce\1-jrvmvteuqd6jvu7nybcpjq.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServerMain\ClassLibrary\ClassLibrary.csproj">
+      <Project>{0497eede-bf5b-44cd-aa3a-0e8744f0a712}</Project>
+      <Name>ClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServerMain\Command_Main\Command_Main.csproj">
+      <Project>{a7dcb797-2d79-4121-8dae-9f376e9f6ffb}</Project>
+      <Name>Command_Main</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
